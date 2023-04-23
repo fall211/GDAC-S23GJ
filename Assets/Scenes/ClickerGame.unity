@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'peaches:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 65057a68d2b661d49a39c146c97d55ed, type: 2}
+  m_sharedMaterial: {fileID: -3696633694016712683, guid: 65057a68d2b661d49a39c146c97d55ed, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -215,8 +215,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -362,7 +362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -319.21002, y: 0.000030517578}
+  m_AnchoredPosition: {x: -319.21002, y: -0.000061035156}
   m_SizeDelta: {x: 300, y: 1000}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &461316101
@@ -697,8 +697,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 65057a68d2b661d49a39c146c97d55ed, type: 2}
+  m_sharedMaterial: {fileID: -3696633694016712683, guid: 65057a68d2b661d49a39c146c97d55ed, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -730,7 +730,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -758,7 +758,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -85.69846, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -815,6 +815,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c998821c052344eb3b21388b64c0e634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  topLeft: {x: -2, y: 2}
+  bottomRight: {x: 2, y: -2}
+  peachPrefab: {fileID: 1330802992188550474, guid: d1f2ee3e11e192e4195680d0217c062f, type: 3}
+  smallScale: 3.4
+  largeScale: 3.5
 --- !u!212 &1433138402
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -875,8 +880,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433138400}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.64, y: -0.31, z: 0}
-  m_LocalScale: {x: 3.3183, y: 3.3183, z: 3.3183}
+  m_LocalPosition: {x: -5.5, y: 0, z: 0}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -895,7 +900,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.005411625, y: -0.016234577}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -906,7 +911,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 1.9199579, y: 1.5736207}
+  m_Size: {x: 2, y: 1.6}
   m_EdgeRadius: 0
 --- !u!1 &1666770877
 GameObject:
@@ -1309,8 +1314,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 567911168}
   m_HandleRect: {fileID: 567911167}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.24924925
+  m_Value: 1.0000001
+  m_Size: 0.2679356
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
