@@ -16,5 +16,5 @@ MonoBehaviour:
   upgradeType: 1
   level: 0
   cost: 600000000
-  effectValue: 880000
+  effectValue: 1880000
   icon: {fileID: 21300000, guid: 9c9994b959d944a058e6d51070125095, type: 3}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: NekoFriends
   m_EditorClassIdentifier: 
   upgradeName: Friends
-  upgradeType: 1
+  upgradeType: 0
   level: 0
   cost: 100
-  effectValue: 10
+  effectValue: 20
   icon: {fileID: 21300000, guid: b25e9d036b8c44f6280bd424e8b315e5, type: 3}

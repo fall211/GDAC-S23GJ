@@ -13,6 +13,10 @@ public class ClickableObject : MonoBehaviour
     public float smallScale;
     public float largeScale;
 
+    public AudioClip clickSound;
+
+    public AudioSource audioSource;
+
     private void OnMouseDown() {
         if (Input.GetMouseButtonDown(0)){
             on_click();
@@ -34,6 +38,7 @@ public class ClickableObject : MonoBehaviour
         Instantiate(peachPrefab, transform.position + (Vector3)new Vector2(Random.Range(topLeft.x, bottomRight.x), Random.Range(topLeft.y, bottomRight.y)), Quaternion.identity).GetComponent<Rigidbody2D>()
             .AddForce(new Vector2(Random.Range(topLeft.x, bottomRight.x), Random.Range(topLeft.y, bottomRight.y)), ForceMode2D.Impulse);
         this.gameObject.transform.localScale = new Vector3(smallScale, smallScale, smallScale);
+        audioSource.PlayOneShot(clickSound);
     }
 
 

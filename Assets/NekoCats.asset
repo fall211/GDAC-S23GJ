@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NekoCats
   m_EditorClassIdentifier: 
   upgradeName: Cats
-  upgradeType: 1
+  upgradeType: 0
   level: 0
   cost: 50
   effectValue: 5

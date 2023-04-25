@@ -16,6 +16,8 @@ public class UpgradeManager : MonoBehaviour
     public double autoClickAmount = 0;
     public double multiplierAmount = 1;
 
+    public NewsTicker newsScript;
+
     public static UpgradeManager Instance { get; private set; }
 
     private void Awake(){
@@ -110,6 +112,7 @@ public class UpgradeManager : MonoBehaviour
     public void addPeaches(double amount) {
         totalPeaches += amount;
         peachesTxtUpdate.updateCount((int)totalPeaches);
+        newsScript.totalPeaches = (int)totalPeaches;
     }
 
     public double getPeachesCount() {
