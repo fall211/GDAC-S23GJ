@@ -1998,98 +1998,98 @@ MonoBehaviour:
   - content: '  |  Popular peach pies are selling like hot cakes all across Bakersfield!
       Nekojin from Breadsville have travelled across the hills to try the new commodity.'
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 1
+      exponent: 2
   - content: '  |  The mayor of Bakersfield welcomes the latest shipment of flour
       from the town of Breadsville, proclaiming, "the power of pies fueld the eternal
       friendship between our towns."'
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 1
+      exponent: 3
   - content: '  |  Anti-pie advocate exposed for hosting underground pie parties
       with damages averaging half a million to one million in catcoins. '
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 1
+      exponent: 4
   - content: "  |  Experts declare this to be the most peaceful period in recorded
       history. \u201CWe may be entering a new golden age of prosperity, productivity,
       and pies.\u201D  "
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 1
+      exponent: 5
   - content: "  |  Labour rights activists decry new amateur pie vendors for low
       pay, long hours, and unsanitary working conditions. \u201CThe pies are pretty
       bomb, though, ngl.\u201D  "
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 2
+      exponent: 5
   - content: '  |  The mayor is expected to declare the current diabetes epidemic
       believed to be driven by peach pies a public health emergency sometime next
       week.  '
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 5
+      exponent: 5
   - content: '  |  The mayor has been found dead in his office from what preliminary
       reports are suggesting to be diabetes. Autopsy reports scheduled to be released
       next week.   '
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 1
+      exponent: 6
   - content: '  |  In a recent scandal, Pies, Inc. has denied bribing President Felinus
       with pies. "We wholly deny any and all wrongdoing. These allegations are entirely
       false," says CEO.'
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 1
+      exponent: 7
   - content: '  |  The federal government approved a new bill subsidizing Pies, Inc.
       with a generous tax cut. "This bill will create new jobs and help our struggling
       economy," claims President Felinus.'
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 2
+      exponent: 7
   - content: '  |  Pies have replaced catcoins as the national currency. Bakeries
       will begin replacing the federal reserve as early as next month.'
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 3
+      exponent: 7
   - content: '  |  Public outrage grows as leaked audio appears to reveal the president
       purchasing services from a pie baking hotline.  '
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 4
+      exponent: 7
   - content: '  |  Bakersfield has officially renamed itself to the Greater Empire
       of Bakersfield.'
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 5
+      exponent: 8
   - content: "  |  Martial law is declared in the Greater Bakersfield Empire in order
       to quell public unrest. The president has pinned the protests to be the work
       of Breadville saboteurs. Breadsville has urged for peace, citing the historical
       \u201Ceternal friendship\u201D between the two regions ."
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 1
+      exponent: 9
   - content: '  |  Unrest has ceased in the Greater Bakersfield Empire after brave
       Bakersfield shock troops have gunned down protestors in a humane and peachy-clean
       manner. '
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 1.5
+      exponent: 9
   - content: '  |  Rehabilitation camps for dissenters have been erected as part
       of the national endeavor to contain unrest. '
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 2
+      exponent: 9
   - content: "  |  President Felinus has ordered mobilization of the Bakersfield
       military to defend the country against the historically hostile nation of Breadsville.
       \u201DThe degeneracy of their pies can never be allowed to stain this earth.\u201D  "
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 2
+      exponent: 10
   - content: '  |  BLOOD FOR THE PEACH GOD. c''mgep hup nog neko cosm yog torog''im'
     peachThreshold:
-      mantissa: 0
-      exponent: 0
+      mantissa: 6.66666666666
+      exponent: 11
   currentNews: 0
   scrollingTMP: {fileID: 171970900}
   scrollSpeed: 100
