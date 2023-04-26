@@ -17,4 +17,4 @@ MonoBehaviour:
   level: 0
   cost: 10000000
   effectValue: 39000
-  icon: {fileID: 21300000, guid: 6f69bc286ff3a3545b3da7c9cf1ed8c8, type: 3}
+  icon: {fileID: 21300000, guid: 555beb54c862947af95293720944368a, type: 3}

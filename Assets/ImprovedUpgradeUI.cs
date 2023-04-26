@@ -2,12 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class UpgradeUI : MonoBehaviour
+public class ImprovedUpgradeUI : MonoBehaviour
 {
     public UpgradeData upgradeData;
-    public TextMeshPro upgradeNameText;
-    public TextMeshPro upgradeLevelText;
-    public TextMeshPro upgradeCostText;
+    public TextMeshProUGUI upgradeNameText;
+    public TextMeshProUGUI upgradeLevelText;
+    public TextMeshProUGUI upgradeCostText;
     public SpriteRenderer upgradeIcon;
 
     private void Start() {

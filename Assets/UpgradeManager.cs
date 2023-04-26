@@ -59,11 +59,13 @@ public class UpgradeManager : MonoBehaviour
             GameObject upgradeObject = Instantiate(upgradePrefab, upgradesParent);
 
             // Get the UpgradeUI component and set the upgradeData
-            UpgradeUI upgradeUI = upgradeObject.GetComponent<UpgradeUI>();
+            ImprovedUpgradeUI upgradeUI = upgradeObject.GetComponent<ImprovedUpgradeUI>();
             upgradeUI.upgradeData = data;
 
+            
 
         }
+        upgradesParent.GetComponent<ResizeContentField>().Resize();
     }
 
     public bool CanPurchaseUpgrade(UpgradeData upgradeData) {
