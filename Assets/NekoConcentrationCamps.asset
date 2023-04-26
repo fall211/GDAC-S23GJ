@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Concentration Camp
   upgradeType: 1
   level: 0
-  cost: 2700000000000
-  effectValue: 120000000
+  cost:
+    mantissa: 2.7
+    exponent: 12
+  effectValue:
+    mantissa: 1.2
+    exponent: 8
   icon: {fileID: 21300000, guid: d567dd1993fd2418cb06428f93d7c06d, type: 3}

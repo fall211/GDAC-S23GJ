@@ -16,7 +16,7 @@ public class ImprovedUpgradeUI : MonoBehaviour
 
     public void UpdateUI() {
         upgradeNameText.text = upgradeData.upgradeName;
-        upgradeCostText.text = "Cost: " + (int)upgradeData.cost;
+        upgradeCostText.text = "Cost: " + upgradeData.cost.ToString("F0");
         upgradeLevelText.text = "Level: " + upgradeData.level;
         upgradeIcon.sprite = upgradeData.icon;
     }

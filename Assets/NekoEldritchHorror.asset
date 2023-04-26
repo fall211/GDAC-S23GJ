@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Eldritch Horror
   upgradeType: 1
   level: 0
-  cost: 100000000000000
-  effectValue: 1000000000000
+  cost:
+    mantissa: 1
+    exponent: 14
+  effectValue:
+    mantissa: 1
+    exponent: 12
   icon: {fileID: 21300000, guid: e1ad3744ab1ae469abaedb6a19a78833, type: 3}

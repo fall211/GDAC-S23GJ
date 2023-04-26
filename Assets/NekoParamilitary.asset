@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Paramilitary
   upgradeType: 1
   level: 0
-  cost: 2100000000
-  effectValue: 8000000
+  cost:
+    mantissa: 2.1
+    exponent: 9
+  effectValue:
+    mantissa: 8
+    exponent: 6
   icon: {fileID: 21300000, guid: a655439bdb40a4d56921ac75f307c6cf, type: 3}

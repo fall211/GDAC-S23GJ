@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Cathedral
   upgradeType: 1
   level: 0
-  cost: 1200000000
-  effectValue: 2100000
+  cost:
+    mantissa: 1.2
+    exponent: 9
+  effectValue:
+    mantissa: 2.1
+    exponent: 6
   icon: {fileID: 21300000, guid: 80cd4323a1ea44a5a9578d156e61152a, type: 3}

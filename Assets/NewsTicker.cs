@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using BreakInfinity;
 
 public class NewsTicker : MonoBehaviour
 {
-    public int totalPeaches;
+    public BigDouble totalPeaches;
 
     [System.Serializable]
     public struct News
     {
         public string content;
-        public double peachThreshold;
+        public BigDouble peachThreshold;
     };
 
     [SerializeField]

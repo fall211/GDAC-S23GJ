@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Judicial Courts
   upgradeType: 1
   level: 0
-  cost: 300000000
-  effectValue: 440000
+  cost:
+    mantissa: 3
+    exponent: 8
+  effectValue:
+    mantissa: 4.4
+    exponent: 5
   icon: {fileID: 21300000, guid: bd526a0e8f92a409aa1f2667052e06a7, type: 3}

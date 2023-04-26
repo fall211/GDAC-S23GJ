@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using BreakInfinity;
 
 public class UpgradeManager : MonoBehaviour
 {
@@ -10,11 +11,11 @@ public class UpgradeManager : MonoBehaviour
 
     public GameObject upgradePrefab;
     public Transform upgradesParent;
-    public double totalPeaches;
+    public BigDouble totalPeaches;
 
-    public double clickAmount = 1;
-    public double autoClickAmount = 0;
-    public double multiplierAmount = 1;
+    public BigDouble clickAmount = 1;
+    public BigDouble autoClickAmount = 0;
+    public BigDouble multiplierAmount = 1;
 
     public NewsTicker newsScript;
 
@@ -111,24 +112,24 @@ public class UpgradeManager : MonoBehaviour
     }
 
 
-    public void addPeaches(double amount) {
+    public void addPeaches(BigDouble amount) {
         totalPeaches += amount;
-        peachesTxtUpdate.updateCount((int)totalPeaches);
-        newsScript.totalPeaches = (int)totalPeaches;
+        peachesTxtUpdate.updateCount(totalPeaches);
+        newsScript.totalPeaches = totalPeaches;
     }
 
-    public double getPeachesCount() {
+    public BigDouble getPeachesCount() {
         return totalPeaches;
     }
 
-    public void removePeaches(double amount) {
+    public void removePeaches(BigDouble amount) {
         totalPeaches -= amount;
-        peachesTxtUpdate.updateCount((int)totalPeaches);
+        peachesTxtUpdate.updateCount(totalPeaches);
     }
 
-    public void setPeaches(double amount) {
+    public void setPeaches(BigDouble amount) {
         totalPeaches = amount;
-        peachesTxtUpdate.updateCount((int)totalPeaches);
+        peachesTxtUpdate.updateCount(totalPeaches);
     }
 
 

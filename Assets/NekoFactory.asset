@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Factory
   upgradeType: 1
   level: 0
-  cost: 50000
-  effectValue: 5000
+  cost:
+    mantissa: 5
+    exponent: 4
+  effectValue:
+    mantissa: 5
+    exponent: 3
   icon: {fileID: 21300000, guid: dd61f7dde35344287815679a12d05ef9, type: 3}

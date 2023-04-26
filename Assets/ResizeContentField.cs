@@ -10,9 +10,9 @@ public class ResizeContentField : MonoBehaviour
     public void Resize() {
         RectTransform rectTransform = GetComponent<RectTransform>();
         float height = 0;
-        
+
         GridLayoutGroup gridLayoutGroup = GetComponent<GridLayoutGroup>();   
-        height = gridLayoutGroup.cellSize.y * this.transform.childCount + gridLayoutGroup.spacing.y * (this.transform.childCount - 1);
+        height = gridLayoutGroup.cellSize.y * this.transform.childCount + gridLayoutGroup.spacing.y * (this.transform.childCount);
         
         rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, height);
     }

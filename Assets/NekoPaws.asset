@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Paws
   upgradeType: 0
   level: 0
-  cost: 10
-  effectValue: 1
+  cost:
+    mantissa: 1
+    exponent: 1
+  effectValue:
+    mantissa: 1
+    exponent: 0
   icon: {fileID: 21300000, guid: 7ea00655ea30e47d4b2e323d427f549f, type: 3}

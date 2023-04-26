@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Army
   upgradeType: 1
   level: 0
-  cost: 1500000000
-  effectValue: 4000000
+  cost:
+    mantissa: 1.5
+    exponent: 9
+  effectValue:
+    mantissa: 4
+    exponent: 6
   icon: {fileID: 21300000, guid: e48cad223232645e8a30c7490f5184e1, type: 3}

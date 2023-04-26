@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Cult
   upgradeType: 1
   level: 0
-  cost: 3300000000000
-  effectValue: 300000000
+  cost:
+    mantissa: 3.3
+    exponent: 12
+  effectValue:
+    mantissa: 3
+    exponent: 8
   icon: {fileID: 21300000, guid: 040a028594f7b4053862474790510220, type: 3}

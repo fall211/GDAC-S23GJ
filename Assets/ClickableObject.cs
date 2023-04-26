@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using BreakInfinity;
 
 public class ClickableObject : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class ClickableObject : MonoBehaviour
 
 
         public void on_click() {
-        double amount = UpgradeManager.Instance.clickAmount * UpgradeManager.Instance.multiplierAmount;
+        BigDouble amount = UpgradeManager.Instance.clickAmount * UpgradeManager.Instance.multiplierAmount;
         UpgradeManager.Instance.addPeaches(amount);
         Instantiate(peachPrefab, transform.position + (Vector3)new Vector2(Random.Range(topLeft.x, bottomRight.x), Random.Range(topLeft.y, bottomRight.y)), Quaternion.identity).GetComponent<Rigidbody2D>()
             .AddForce(new Vector2(Random.Range(topLeft.x, bottomRight.x), Random.Range(topLeft.y, bottomRight.y)), ForceMode2D.Impulse);

@@ -479,8 +479,8 @@ MonoBehaviour:
   peachesTxtUpdate: {fileID: 1390376590}
   upgradeDataList:
   - {fileID: 11400000, guid: 20461fd75043740568654e6dfd8c9414, type: 2}
-  - {fileID: 11400000, guid: 5e5ef9612452d4f2e917ba53a719ecb4, type: 2}
   - {fileID: 11400000, guid: 7dc3814ae09b541af821320ca3b0d64d, type: 2}
+  - {fileID: 11400000, guid: 5e5ef9612452d4f2e917ba53a719ecb4, type: 2}
   - {fileID: 11400000, guid: 3961bdfc3325646c1b840b9c46888711, type: 2}
   - {fileID: 11400000, guid: 0fc827429484743b784d5e34aa4b8ae4, type: 2}
   - {fileID: 11400000, guid: 061630f21a0934c7cbdcf151a8d92e1a, type: 2}
@@ -496,10 +496,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 980f53b914f324743ba5cf34694e0b1e, type: 2}
   upgradePrefab: {fileID: 6379865015838068809, guid: 3283c1bbfbc494a0b9a89e95d32b6f2d, type: 3}
   upgradesParent: {fileID: 461316100}
-  totalPeaches: 0
-  clickAmount: 1
-  autoClickAmount: 0
-  multiplierAmount: 1
+  totalPeaches:
+    mantissa: 0
+    exponent: 0
+  clickAmount:
+    mantissa: 1
+    exponent: 0
+  autoClickAmount:
+    mantissa: 0
+    exponent: 0
+  multiplierAmount:
+    mantissa: 1
+    exponent: 0
   newsScript: {fileID: 2071671653}
 --- !u!4 &422076530
 Transform:
@@ -603,6 +611,8 @@ GameObject:
   - component: {fileID: 461316100}
   - component: {fileID: 461316101}
   - component: {fileID: 461316102}
+  - component: {fileID: 461316104}
+  - component: {fileID: 461316103}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -628,7 +638,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 256, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &461316101
 MonoBehaviour:
@@ -647,7 +657,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 1
+  m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 100, y: 100}
@@ -666,6 +676,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c488ee7e3ad43698b2f260b4dec052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &461316103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461316099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.122279465, b: 0, a: 0.36078432}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 0
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &461316104
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461316099}
+  m_CullTransparentMesh: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,8 +1175,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 240.1, y: 0.26498795}
-  m_SizeDelta: {x: 154.42, y: 51.47}
+  m_AnchoredPosition: {x: 318.46, y: 0.26498795}
+  m_SizeDelta: {x: 311.13, y: 51.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390376588
 MonoBehaviour:
@@ -1177,10 +1225,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 56.15
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1213,7 +1261,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -85.69846, w: 0}
+  m_margin: {x: 0, y: 0, z: 1.3637161, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1567,8 +1615,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 242.5, y: 0}
-  m_SizeDelta: {x: -515, y: -100}
+  m_AnchoredPosition: {x: 235, y: 0}
+  m_SizeDelta: {x: -530, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1666770879
 MonoBehaviour:
@@ -1938,72 +1986,110 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78e795525c65d94ebc5dee491c3bc07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalPeaches: 0
+  totalPeaches:
+    mantissa: 0
+    exponent: 0
   newsTicker:
   - content: '  |  Just a regular day in Bakersfield! Nothing eventful or weird has
       happened yet haha'
-    peachThreshold: 0
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  Popular peach pies are selling like hot cakes all across Bakersfield!
       Nekojin from Breadsville have travelled across the hills to try the new commodity.'
-    peachThreshold: 100
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  The mayor of Bakersfield welcomes the latest shipment of flour
       from the town of Breadsville, proclaiming, "the power of pies fueld the eternal
       friendship between our towns."'
-    peachThreshold: 1000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  Anti-pie advocate exposed for hosting underground pie parties
       with damages averaging half a million to one million in catcoins. '
-    peachThreshold: 10000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: "  |  Experts declare this to be the most peaceful period in recorded
       history. \u201CWe may be entering a new golden age of prosperity, productivity,
       and pies.\u201D  "
-    peachThreshold: 100000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: "  |  Labour rights activists decry new amateur pie vendors for low
       pay, long hours, and unsanitary working conditions. \u201CThe pies are pretty
       bomb, though, ngl.\u201D  "
-    peachThreshold: 200000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  The mayor is expected to declare the current diabetes epidemic
       believed to be driven by peach pies a public health emergency sometime next
       week.  '
-    peachThreshold: 500000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  The mayor has been found dead in his office from what preliminary
       reports are suggesting to be diabetes. Autopsy reports scheduled to be released
       next week.   '
-    peachThreshold: 1000000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  In a recent scandal, Pies, Inc. has denied bribing President Felinus
       with pies. "We wholly deny any and all wrongdoing. These allegations are entirely
       false," says CEO.'
-    peachThreshold: 10000000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  The federal government approved a new bill subsidizing Pies, Inc.
       with a generous tax cut. "This bill will create new jobs and help our struggling
       economy," claims President Felinus.'
-    peachThreshold: 20000000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  Pies have replaced catcoins as the national currency. Bakeries
       will begin replacing the federal reserve as early as next month.'
-    peachThreshold: 30000000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  Public outrage grows as leaked audio appears to reveal the president
       purchasing services from a pie baking hotline.  '
-    peachThreshold: 40000000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  Bakersfield has officially renamed itself to the Greater Empire
       of Bakersfield.'
-    peachThreshold: 500000000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: "  |  Martial law is declared in the Greater Bakersfield Empire in order
       to quell public unrest. The president has pinned the protests to be the work
       of Breadville saboteurs. Breadsville has urged for peace, citing the historical
       \u201Ceternal friendship\u201D between the two regions ."
-    peachThreshold: 1000000000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  Unrest has ceased in the Greater Bakersfield Empire after brave
       Bakersfield shock troops have gunned down protestors in a humane and peachy-clean
       manner. '
-    peachThreshold: 1500000000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  Rehabilitation camps for dissenters have been erected as part
       of the national endeavor to contain unrest. '
-    peachThreshold: 2000000000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: "  |  President Felinus has ordered mobilization of the Bakersfield
       military to defend the country against the historically hostile nation of Breadsville.
       \u201DThe degeneracy of their pies can never be allowed to stain this earth.\u201D  "
-    peachThreshold: 20000000000
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   - content: '  |  BLOOD FOR THE PEACH GOD. c''mgep hup nog neko cosm yog torog''im'
-    peachThreshold: 666666666666
+    peachThreshold:
+      mantissa: 0
+      exponent: 0
   currentNews: 0
   scrollingTMP: {fileID: 171970900}
   scrollSpeed: 100

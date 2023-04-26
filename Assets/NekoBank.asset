@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Bank
   upgradeType: 1
   level: 0
-  cost: 10000000
-  effectValue: 39000
+  cost:
+    mantissa: 1
+    exponent: 7
+  effectValue:
+    mantissa: 3.9
+    exponent: 4
   icon: {fileID: 21300000, guid: 555beb54c862947af95293720944368a, type: 3}

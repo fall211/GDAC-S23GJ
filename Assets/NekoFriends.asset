@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Friends
   upgradeType: 0
   level: 0
-  cost: 100
-  effectValue: 20
+  cost:
+    mantissa: 1
+    exponent: 2
+  effectValue:
+    mantissa: 2
+    exponent: 1
   icon: {fileID: 21300000, guid: b25e9d036b8c44f6280bd424e8b315e5, type: 3}

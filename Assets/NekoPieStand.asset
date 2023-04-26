@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Pie Stand
   upgradeType: 1
   level: 0
-  cost: 500
-  effectValue: 50
+  cost:
+    mantissa: 5
+    exponent: 2
+  effectValue:
+    mantissa: 5
+    exponent: 1
   icon: {fileID: 21300000, guid: 3c8997a20646341eea3f780ec61505dd, type: 3}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using BreakInfinity;
 
 
 public enum UpgradeType {
@@ -15,8 +16,8 @@ public class UpgradeData : ScriptableObject {
     public string upgradeName;
     public UpgradeType upgradeType;
     public int level;
-    public double cost;
-    public double effectValue;
+    public BigDouble cost;
+    public BigDouble effectValue;
     public Sprite icon;
     
     public UpgradeData DeepCopy(){

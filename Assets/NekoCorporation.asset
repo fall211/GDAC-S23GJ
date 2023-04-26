@@ -15,6 +15,10 @@ MonoBehaviour:
   upgradeName: Corporation
   upgradeType: 1
   level: 0
-  cost: 500000
-  effectValue: 10000
+  cost:
+    mantissa: 5
+    exponent: 5
+  effectValue:
+    mantissa: 1
+    exponent: 4
   icon: {fileID: 21300000, guid: 390d67e8e54054c55a939024fd8364fc, type: 3}
