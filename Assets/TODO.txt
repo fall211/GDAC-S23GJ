@@ -1,0 +1,4 @@
+todo:
+
+1. main menu
+2. commas for numbers OR: K, M, B, T at the end of numbers

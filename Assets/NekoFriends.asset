@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NekoFriends
   m_EditorClassIdentifier: 
   upgradeName: Friends
-  upgradeType: 0
+  upgradeType: 1
   level: 0
   cost:
     mantissa: 1
